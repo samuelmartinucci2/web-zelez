@@ -5,6 +5,7 @@ gem 'paperclip', '~> 4.2'
 gem 'mail_form'
 gem 'simple_form'
 gem 'redactor-rails'
+gem 'owlcarousel-rails'
 
 gem 'bower-rails'
 

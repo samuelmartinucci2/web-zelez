@@ -6,8 +6,6 @@
   <p><b>Data de Nascimento: </b><%= l(player.birth_date, format: '%d/%m/%Y') %></p>
 
 
-  <%= link_to(
-              image_tag(player.picture.url(:thumb)),
-              player.picture.url) if player.picture? %>
+  <%= image_tag(player.picture.url(:thumb)) if player.picture? %>
 
 </div>
