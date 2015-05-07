@@ -1,0 +1,12 @@
+<div id="featureRight">
+  <h2><%= post.title %></h2>
+
+  <p><%= raw(post.content[0..255]) %></p>
+
+  <p><%= link_to 'Leia mais...', controller: "posts", action: "show", id: post.id if post.content.length > 30 %></p>
+
+  <%= link_to(
+              image_tag(post.picture.url(:thumb)),
+              post.picture.url) if post.picture? %>
+
+</div>

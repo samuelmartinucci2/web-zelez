@@ -1,0 +1,13 @@
+<div id="featureRight">
+  <h2><%= player.name %> (<%= player.position %>)</h2>
+  <p><b>Número: </b><%= player.number %></p>
+  <p><b>Características: </b><%= player.description %></p>
+  <p><b>Posição: </b><%= player.description %></p>
+  <p><b>Data de Nascimento: </b><%= l(player.birth_date, format: '%d/%m/%Y') %></p>
+
+
+  <%= link_to(
+              image_tag(player.picture.url(:thumb)),
+              player.picture.url) if player.picture? %>
+
+</div>

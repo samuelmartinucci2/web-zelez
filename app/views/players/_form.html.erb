@@ -1,0 +1,12 @@
+<%= simple_form_for @player, :html => {:multipart => true} do |f| %>
+    <%= f.input :name, :required => true %>
+    <%= f.input :description, :as => :text, :required => true %>
+    <%= f.input :birth_date, as: :date, start_year: 1950, :required => true %>
+    <%= f.input :position, :required => true %>
+    <%= f.input :number, as: :integer, :required => true %>
+    <%= f.input :picture, as: :file %>
+    <div>
+      </br>
+      <%= f.button :submit, 'Enviar', :class => "btn btn-primary" %>
+    </div>
+<% end %>

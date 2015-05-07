@@ -1,0 +1,9 @@
+<%= simple_form_for @post, :html => {:multipart => true} do |f| %>
+    <%= f.input :title, :required => true %>
+    <%= f.input :content, :as => :text, :placeholder => "Input here", :label => false, :input_html => {:class => "redactor"} %>
+    <%= f.input :picture, as: :file %>
+    <div>
+      </br>
+      <%= f.button :submit, 'Enviar', :class => "btn btn-primary" %>
+    </div>
+<% end %>
