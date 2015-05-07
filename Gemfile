@@ -6,7 +6,7 @@ gem 'mail_form'
 gem 'simple_form'
 gem 'redactor-rails'
 gem 'owlcarousel-rails'
-gem 'aws-sdk'
+gem 'aws-sdk', '~> 1.61.0'
 gem 'figaro'
 
 gem 'bower-rails'
