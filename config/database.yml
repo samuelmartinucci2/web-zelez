@@ -23,3 +23,11 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
+  database: time-tracker_production
+  username: time-tracker
+  password: <%= ENV['WEB-ZELEZ_DATABASE_PASSWORD'] %>
