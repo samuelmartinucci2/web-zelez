@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap-sass-official
 //= require redactor-rails
 //= require owl.carousel
 //= require_tree .
