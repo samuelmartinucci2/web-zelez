@@ -1,0 +1,9 @@
+<div id="featureRight">
+  <h2><%= championship.name %></h2>
+  <p><%= championship.final_date %></p>
+
+  <%= link_to(
+              image_tag(championship.picture.url(:thumb)),
+              championship.picture.url) if championship.picture? %>
+
+</div>
